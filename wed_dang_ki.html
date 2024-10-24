@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>WED ĐĂNG KÝ TÀI KHOẢN</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="wed_dang_ki.css">
+    </head>
+    <body>
+            <h1>Đăng Ký Tài Khoản</h1>
+           <p>Vui lòng điền vào các thông tin được yêu cầu</p>
+           <form action="https://register-demo.freecodecamp.org" method="POST">
+           
+            <fieldset >
+                <label for="first-name">
+                    Enter Your First Name: <input type="text" id="first-name" name="ten" required>
+                </label>
+
+                <label for="last-name">
+                    Enter Your Last Name: <input type="text" id="last-name" name="ho" required>
+                </label>
+
+                <label for="email">
+                    Enter Your Email: <input type="email" id="email" name="gmail" required>
+                </label>
+
+                <label for="new-password">
+                    Create a New Password: <input type="password" id="new-password" name="newpass" required pattern="[a-z0-5]{8,}">
+                </label>
+
+            </fieldset>
+                
+            <fieldset >
+                <legend >Account type (required)</legend>
+                <label for="personal-account"><input type="radio" name="account-type" id="personal-account" class="inline" checked> Cá Nhân</label>
+                <label for="business-account"><input type="radio" name="account-type" id="business-account" class="inline"> Doanh Nghiệp</label>
+            </fieldset>
+
+            <fieldset>
+            <!--<input type="file" name="" id="">-->   
+                <label for="profile-picture" >Upload a profile picture: <input type="file" id="profile-picture" name="picture"></label>
+                <label for="age" > Input your age (years): <input type="number" min="13" max="120" id="age" name="tuoi"></label>
+                <label for="referrer" >Bạn biết đến chúng tôi bằng cách nào
+                    <select id="referrer" name="lua-chon-nguon">
+                        <option value="">(select one)</option>
+                        <option value="1">freeCodeCamp News</option>
+                        <option value="2">freeCodeCamp YouTube Channel</option>
+                        <option value="3">freeCodeCamp Forum</option>
+                        <option value="4">Other</option>
+                    </select>
+                </label>
+                <label for="bio" >Cung cấp tiểu sử: <textarea id="bio" rows="3" cols="30" placeholder="I like coding on the beach..." name="tieu-su"></textarea></label>
+                
+            </fieldset>
+            <label for="terms-and-conditions"> <input type="checkbox" id="terms-and-conditions" name="dieukhoan" class="inline" required >Tôi chấp nhận<a href="https://www.freecodecamp.org/news/terms-of-service/"> các điều khoản và điều kiện</a>  </label>
+            <input type="submit" value="ĐĂNG KÝ">
+           </form>
+           
+    </body>
+</html>
